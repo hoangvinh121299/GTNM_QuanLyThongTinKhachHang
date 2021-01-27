@@ -1,0 +1,24 @@
+.tool-bars__container{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.avatar {
+  position: auto;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.user-information{
+  font: Roboto;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 141px;
+}
+

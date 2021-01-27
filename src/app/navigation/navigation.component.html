@@ -1,0 +1,16 @@
+<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
+	<nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu, 'slide-menu-active-dark': darkmodeActive}" (click)="$event.stopImmediatePropagation();">
+		<section class="menu-header" [ngClass]="{'menu-header-dark': darkmodeActive}"> <span class="greeting__text">Welcome Back</span>
+			<div class="profile-image__container"> <img src="./assets/audience.png" alt="avatar" width="100" height="100"> </div>
+		</section>
+		<section class="menu-body">
+			<ul class="menu-links" [ngClass]="{'menu-links-dark': darkmodeActive}">
+				<li class="menu-link" [routerLinkActiveOptions]="{exact:false}" routerLink="/add" routerLinkActive="link-active" (click)="toggleMenu()">Danh sách khách hàng</li>
+				<li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="" routerLinkActive="link-active" (click)="toggleMenu()">Thống kê doanh thu</li>
+				<!-- <li (click)="logout()" class="menu-link">Logout</li> -->
+			</ul>
+		</section>
+		<section class="menu-footer"> <small class="copyright__text">Quản lý thông tin khách hàng</small> </section>
+	</nav>
+</aside>
+<div class="icon"><img src="./assets/menu.png" (click)="toggleMenu()" alt="menu" class="menu" /></div>
