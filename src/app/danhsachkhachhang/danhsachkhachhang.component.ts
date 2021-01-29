@@ -11,5 +11,8 @@ export class DanhsachkhachhangComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+openChiTietKhachHang()
+{
+  
+}
 }

@@ -9,7 +9,7 @@ import {NavigationComponent} from './navigation/navigation.component';
 import {ToolbarsComponent} from './toolbars/toolbars.component';
 import { ThongKeDoanhThuComponent } from './thong-ke-doanh-thu/thong-ke-doanh-thu.component';
 const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/DanhSachKhachHang', pathMatch: 'full' },
   { path: 'Navigation', component: NavigationComponent, runGuardsAndResolvers: 'always' },
   { path: 'Toolbars', component: ToolbarsComponent },
   { path: 'ThongKeDoanhMuc', component: ThongKeDoanhThuComponent },

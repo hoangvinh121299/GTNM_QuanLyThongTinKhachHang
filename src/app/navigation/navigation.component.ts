@@ -3,6 +3,7 @@ import { Component,OnDestroy, OnInit } from '@angular/core';
 import {take} from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 import { DataTablesModule } from 'angular-datatables';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -15,7 +16,7 @@ export class NavigationComponent implements OnInit {
   sub1: any;
   userEmail = '';
 
-  constructor(public ui: UiService) {
+  constructor(public ui: UiService,private router: Router) {
   }
 
   ngOnInit(): void
@@ -30,5 +31,9 @@ export class NavigationComponent implements OnInit {
 
   modeToggleSwitch() {
     this.ui.darkModeState.next(!this.darkmodeActive);
+  }
+  selected()
+  {
+    
   }
 }
